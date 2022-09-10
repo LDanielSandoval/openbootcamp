@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- icons -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <title>Login Form</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="content">
+      <section class="media-btn">
+        <h1>Sign up to Form</h1>
+        <div class="btns">
+          <button class="google btn">
+            <picture>
+              <img src="/img/google_icon-icons.com_62736.svg" alt="logo-google" class="logo-google" />
+            </picture>
+            <span class="text">Acceder con Google</span>
+          </button>
+          <button class="tw btn">
+            <i class='bx bxl-twitter'></i>
+          </button>
+        </div>
+      </section>
+      <div class="div-or">
+        <hr>
+        <p>Or</p>
+        <hr>
+      </div>
+      <div class="form">
+        <form action="#">
+          <div class="input-data">
+            <label>Name
+              <input type="text" name="name" id="name">
+            </label>
+            <label>Username
+              <input type="text" id="username" name="username">
+            </label>
+
+          </div>
+          <div class="input-email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="input-password">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="6+ characters">
+          </div>
+          <div class="terms-service">
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms" class="terms-label">Creating an account means you're okay with our <a href="#"
+                class="service">Terms of
+                Service, Privacy Policy</a>, and our default <a href="#" class="noti">Notifications
+                Settings</a>.</label>
+          </div>
+          <div class="btn-account">
+            <button type="submit" class="submit-btn">Create Account</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+/* colors */
+:root {
+	--linkcolor: #4f3cc9;
+	--inactive: #212121;
+	--selectedcolor: #454045;
+	--selectedbtn: #e5e5e5;
+	--btncreatecolor: #ea4c89;
+	--logotw: #6e6d7a;
+	--googlebtn: #1a73e8;
+}
+
+/* html */
+/* Evitamos que padding, border, margin, etc.. añadan px’s al elemento y se mantenga en el tamaño deseado o establecido.  */
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+	color: white;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-size: 16px; /* 1rem = 10px */
+	background-color: #161717;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+hr {
+	width: 18rem;
+}
+
+a {
+	text-decoration: none;
+	color: var(--linkcolor);
+}
+
+/* main */
+.container {
+	width: 78rem;
+	height: 65rem;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	max-width: 500px;
+	height: 800px;
+	border: 1px solid var(--inactive); /* guia */
+	padding: 30px 60px 0;
+}
+
+.btn {
+	width: 22rem;
+	height: 3.4rem;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* media */
+.btns {
+	display: flex;
+	flex-direction: row;
+}
+
+.google {
+	background-color: var(--googlebtn);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1.5rem;
+}
+
+.google:hover {
+	opacity: 0.8;
+}
+
+.google .text {
+	font-weight: 500;
+	font-size: 1.2rem;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+
+.google .logo-google {
+	width: 3rem;
+	background-color: white;
+	padding: 8px;
+	position: relative;
+	right: 31px;
+	top: 1.6px;
+	border-radius: 3px 0 0 3px;
+}
+
+.tw {
+	width: 4rem;
+	background-color: var(--selectedbtn);
+}
+
+.tw .bxl-twitter {
+	font-size: 1.4rem;
+	color: var(--logotw);
+}
+
+.tw:hover {
+	background-color: white;
+}
+
+.div-or {
+	display: flex;
+	align-items: center;
+}
+
+/* div */
+.div-or p {
+	color: var(--logotw);
+	padding: 1rem;
+	font-size: 1.4rem;
+}
+
+/* form */
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 3rem;
+}
+
+label {
+	font-size: 1.3rem;
+}
+
+input {
+	background-color: var(--inactive);
+	border: 1px solid transparent;
+	height: 4rem;
+	border-radius: 8px;
+	font-size: 1.4rem;
+	padding: 10px 16px;
+	outline: none;
+	transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+input:hover {
+	background-color: #fff;
+	border: solid 1px var(--inactive);
+	box-shadow: 0 0 4px #eb50ff4f;
+}
+input:focus {
+	background-color: #fff;
+	border: solid 1px #eb50ff4f;
+	box-shadow: 0 0 4px #eb50ff4f;
+}
+
+.input-email,
+.input-password {
+	font-weight: 700;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.input-data {
+	display: flex;
+	font-weight: 700;
+	flex-direction: row;
+	gap: 2rem;
+}
+
+.input-data #name,
+#username {
+	margin-top: 5px;
+	width: 100%;
+}
+
+/* service checkbox */
+
+.terms-service {
+	display: flex;
+	flex-direction: row;
+}
+
+.terms-label {
+	color: white;
+	font-size: 1.2rem;
+	margin-top: 1.5rem;
+}
+
+.terms-service input[type='checkbox'] {
+	width: 20px;
+	box-shadow: none;
+}
+
+.submit-btn {
+	width: 20rem;
+	height: 3.5rem;
+	color: white;
+	font-size: 1.3rem;
+	text-align: center;
+	background-color: var(--btncreatecolor);
+	border: none;
+	border-radius: 1rem;
+	cursor: pointer;
+}
+
+.submit-btn:hover {
+	opacity: 0.75;
+}
